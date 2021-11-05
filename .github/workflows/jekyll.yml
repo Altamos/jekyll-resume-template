@@ -24,3 +24,17 @@ jobs:
       with:
         name: v0.0.1
         path: _site
+
+    - name: Login to DockerHub
+      uses: docker/login-action@v1
+      with:
+        registry: ${{ env.REGISTRY}}
+        username: ${{ github.actor }}
+        password: ${{ secrets.GITHUB_TOKEN }}
+        
+    - name: build and push
+      uses: docker/build-push-action@v2
+      with:
+        context: .
+        push: true
+        tags: cv:latest
