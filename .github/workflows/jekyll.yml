@@ -40,4 +40,4 @@ jobs:
       with:
         context: .
         push: true
-        tags: ${{ github.repository_owner }}/cv:latest
+        tags: altamos/cv:latest
