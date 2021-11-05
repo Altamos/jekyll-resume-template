@@ -40,4 +40,4 @@ jobs:
       with:
         context: .
         push: true
-        tags: altamos/cv:latest
+        tags: ghcr.io/altamos/cv:latest
