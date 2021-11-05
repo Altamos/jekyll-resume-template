@@ -40,4 +40,4 @@ jobs:
       with:
         context: .
         push: true
-        tags: cv:latest
+        tags: user/cv:latest
